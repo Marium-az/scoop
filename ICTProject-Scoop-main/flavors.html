@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="flavors.css">
+    <title>Scoop - Home page</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+</head>
+
+<body>
+    <!-- wavy image-->
+    <section class="hero">
+
+    <!-- navigation bar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container container-nav">
+        
+        <a class="navbar-brand" href="index.html"><img src="nav logo.svg" alt="SCOOP"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto" >
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="flavors.html">Flavours</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link order" href="cart.html">
+                <img src="shopping-cart.svg" alt="cart-icon">
+            </a></li>
+          </ul>
+        </div>
+           </div>
+      
+    </nav>
+
+   <div class="hero-section d-flex justify-content-start">
+    <div class="p-5 text-start texts"> 
+        <h1 class="display-5 fw-bold" id="h1"><span class="scoop">SC<span class="first-o">O</span><span class="second-o">O</span>P</span>'s FLAVOR MENU!</h1> 
+    </div>
+</div>
+</section>
+
+
+<section class="container py-5">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+    
+    <div class="col">
+      <div class="flavour-card h-100">
+        <div class="flavour-top">
+          <img src="choco-celebration-icecream.svg" class="icecream-img-cone">
+        </div>
+        <div class="flavour-info">
+          <h3>Choco Celebration</h3>
+          <div class="card-footer">
+            <span class="price">Rs. 200</span>
+            <button onclick="addToCart(1, 'Choco Celebration Cone', 200)" class="add-btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="flavour-card h-100">
+        <div class="flavour-top">
+          <img src="gold-vanilla-icecream.svg" class="icecream-img-cup">
+        </div>
+        <div class="flavour-info">
+          <h3>Gold Raisin Vanilla</h3>
+          <div class="card-footer">
+            <span class="price">Rs. 200</span>
+            <button onclick="addToCart(2, 'Gold Raisin Vanilla Cup', 200)" class="add-btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="flavour-card h-100">
+        <div class="flavour-top">
+          <img src="choco-ganache-icecream.svg" class="icecream-img-cone">
+        </div>
+        <div class="flavour-info">
+          <h3>Choco Ganache</h3>
+          <div class="card-footer">
+            <span class="price">Rs. 200</span>
+            <button onclick="addToCart(3, 'Choco Ganache Cone', 200)" class="add-btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="flavour-card h-100">
+        <div class="flavour-top">
+          <img src="strawberry-cream-icecream.svg" class="icecream-img-cup">
+        </div>
+        <div class="flavour-info">
+          <h3>Strawberry Cream</h3>
+          <div class="card-footer">
+            <span class="price">Rs. 200</span>
+            <button onclick="addToCart(4, 'Strawberry Cream Cup', 200)" class="add-btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="flavour-card h-100">
+        <div class="flavour-top">
+          <img src="vanilla-bean-icecream.svg" class="icecream-img-cone">
+        </div>
+        <div class="flavour-info">
+          <h3>Vanilla Bean</h3>
+          <div class="card-footer">
+            <span class="price">Rs. 200</span>
+            <button onclick="addToCart(5, 'Vanilla Bean Cone', 200)" class="add-btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="flavour-card h-100">
+        <div class="flavour-top">
+          <img src="classic-pistachio-icecream.svg" class="icecream-img-cup">
+        </div>
+        <div class="flavour-info">
+          <h3>Classic Pistachio</h3>
+          <div class="card-footer">
+            <span class="price">Rs. 200</span>
+            <button onclick="addToCart(6, 'Classic Pistachio Cup', 200)" class="add-btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--footer-->
+<footer class="footer pt-3 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="scoop-footer"><span class="scoop-light">SC<span class="first-o">O</span><span class="second-o">O</span>P</span></h4>
+                <p class="footer-text small">Bringing happiness to your doorstep, one scoop at a time.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="footer-text">Follow us on <a class="link" href="https://www.instagram.com/">Instagram</a> | <a class="link" href="https://www.facebook.com/">Facebook</a></p>
+                <p class="small footer-text">&copy; 2026 Scoop Ice Cream Shop</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
